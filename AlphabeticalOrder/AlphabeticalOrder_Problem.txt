@@ -1,0 +1,23 @@
+Title: 
+Alphabetical Order
+
+Problem: 
+You are given a list of contac names.Order it alphabetically.
+
+Input format: 
+Sequence of contact names,each on a new line.
+Names are non-empty and consist only of lowercase english letters.
+Total lenght of names is no more than 10,000.
+
+Output format:
+Output given names in alphabetical order each name on a new line.
+
+Sample input:
+turing
+dijkstra
+knuth
+
+Sample output:
+dijkstra
+knuth
+turing
