@@ -1,0 +1,17 @@
+Title: 
+Sum N Numbers
+
+Problem: 
+Sum from 1 to N, N being a number given by the user
+
+Input format: 
+N is an integer number
+
+Output format:
+An integer representing the sum of 1 to N
+
+Sample input:
+4
+
+Sample output:
+10

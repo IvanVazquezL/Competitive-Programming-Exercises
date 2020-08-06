@@ -1,0 +1,3 @@
+##Sum with the formula
+n = int(input())
+print(round((n*(n+1))/2))
