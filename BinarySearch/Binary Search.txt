@@ -1,0 +1,16 @@
+Algorithm: Binary Search
+
+Input: 
+Sorted list of elements
+Element that you are looking for
+
+Output: 
+Returns the position of the element, if it is in the list
+If it is not in the list, it returns null
+
+Number of steps:
+For a list of n, binary search will take log base 2(n) steps in the worst case
+
+List of 100 elements = log base 2(100) = 6.64 = 7
+
+List of 10 elements = log base 2(10) = 3.32 = 4
