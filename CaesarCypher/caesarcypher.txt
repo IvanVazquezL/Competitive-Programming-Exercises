@@ -1,0 +1,22 @@
+Title:
+Caesar Cypher
+
+Problem:
+You are given a text and number. Shift the alphabet according to that number and encode the text
+
+Input format:
+The message to encode
+The shift number(0-26)
+
+Output format:
+The encoded message
+
+Sample input:
+If he had anything confidential to say, he wrote it in cipher,
+that is, by so changing the order of the letters of the alphabet,
+that not a word could be made out.
+
+Sample output:
+Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly,
+aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila,
+aoha uva h dvyk jvbsk il thkl vba.
