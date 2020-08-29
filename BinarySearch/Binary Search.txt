@@ -14,3 +14,15 @@ For a list of n, binary search will take log base 2(n) steps in the worst case
 List of 100 elements = log base 2(100) = 6.64 = 7
 
 List of 10 elements = log base 2(10) = 3.32 = 4
+
+Worst complexity: O(log n)
+
+Average complexity: O(log n)
+
+Best complexity: O(1)
+
+Space complexity: O(1)
+
+Data structure: Array
+
+Class: Search algorithm

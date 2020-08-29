@@ -13,9 +13,9 @@ def binary_search(list, item):
         x = input()
         if x == "yes":
             return " "
-        if x == "lower":
+        if x == "mas bajo":
             high = mid -1
-        elif x == "higher":
+        elif x == "mas alto":
             low = mid + 1
 
 

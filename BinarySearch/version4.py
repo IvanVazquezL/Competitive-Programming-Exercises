@@ -18,4 +18,4 @@ def binary_search(list, item):
 
 my_list = list(range(1,11))
 
-print (binary_search(my_list,6))
+print(binary_search(my_list,6))

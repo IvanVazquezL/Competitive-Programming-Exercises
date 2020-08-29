@@ -12,9 +12,9 @@ guess = int(input())
 
 while guess!=randomNumber:
     if guess>randomNumber:
-        print("lower")
+        print("mas bajo")
     elif guess<randomNumber:
-        print("higher")
+        print("mas alto")
 
     guess = int(input())
 
