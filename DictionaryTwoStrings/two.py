@@ -8,8 +8,10 @@ import sys
 
 # Complete the twoStrings function below.
 def twoStrings(s1, s2):
+  #Turns the elements of a list into keys and their value is 0
   dictString1 = dict.fromkeys(s1,0)
   dictString2 = dict.fromkeys(s2,0)
+  #Merge of two dictionaries into one dictionary
   dict3 = {**dictString1, **dictString2}
 
   if len(dict3) < len(dictString1)+ len(dictString2):

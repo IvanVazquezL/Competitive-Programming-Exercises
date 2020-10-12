@@ -28,13 +28,10 @@ def sherlockAndAnagrams(s):
         for j in range(i+1,len(s)+1):
 
             list1= list(s[i:j].strip())
-            print(list1)
 
             list1.sort()
-            print(list1)
 
             transf=''.join(list1)
-            print(transf)
 
 
             if transf in dict:
@@ -45,10 +42,6 @@ def sherlockAndAnagrams(s):
 
             else:
                 dict[transf]=1
-
-            print(dict)
-            print(count)
-            print(" ")
 
 
     return count
