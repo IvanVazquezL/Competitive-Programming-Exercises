@@ -100,4 +100,78 @@ class SingleLinkedList:
         HeadVal = None
 
 
-list = SingleLinkedList()
+def LLSum(list1,list2):
+    #Get the head of the first list
+    node1 = list1.headval
+    #Create a stack to store the numbers
+    listNum1 = []
+    #Loop until the end of the linked list 1
+    while node1:
+        #Insert the value of the node in the stack
+        listNum1.append(node1.dataval)
+        #node1 is now the next node
+        node1 = node1.nextval
+
+    #Get the head of the second list
+    node2 = list2.headval
+    #Create a stack to store the numbers
+    listNum2 = []
+    #Loop until the end of the linked list 2
+    while node2:
+        #Insert the value of the node in the stack
+        listNum2.append(node2.dataval)
+        #node2 is now the next node
+        node2 = node2.nextval
+
+    #Create a list filling in the inverse order of the original linked list 1
+    stringNum = [str(listNum1.pop()) for i in range(len(listNum1))]
+    #Join all the elements of the list into a single string
+    joinString = "".join(stringNum)
+    #Convert that string into an integer
+    stringInt1 = int(joinString)
+
+    #Create a list filling in the inverse order of the original linked list 2
+    stringNum = [str(listNum2.pop()) for i in range(len(listNum2))]
+    #Join all the elements of the list into a single string
+    joinString = "".join(stringNum)
+    #Convert that string into an integer
+    stringInt2 = int(joinString)
+
+    #Sum both integers
+    sumNumber = stringInt1 + stringInt2
+
+    #Create a list eith each digit of the sum converted into a string
+    sumStringNum = [int for int in str(sumNumber)]
+
+    #Create the linked list where we will place the sum of the two other LLs
+    sumList = SingleLinkedList()
+    #The node head will be the first element of the sumStringNum list
+    sumList.headval = Node(sumStringNum.pop(0))
+    #nodeLoop is the node head
+    nodeLoop = sumList.headval
+
+    #Loop until the sumStringNum list is empty
+    while sumStringNum:
+        #The next node of nodeLoop will be the first element in the
+        #sumStringNum list
+        nodeLoop.nextval = Node(sumStringNum.pop(0))
+        #NodeLoop is now the next node of NodeLoop
+        nodeLoop = nodeLoop.nextval
+
+    #Print the Linked List
+    sumList.listprint()
+
+
+
+
+list1 = SingleLinkedList()
+list1.headval = Node(7)
+list1.headval.nextval = Node(1)
+list1.AtEnd(6)
+
+list2 = SingleLinkedList()
+list2.headval = Node(5)
+list2.headval.nextval = Node(9)
+list2.AtEnd(2)
+
+LLSum(list1,list2)
